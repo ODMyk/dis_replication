@@ -1,0 +1,24 @@
+{
+  "name": "notes-replication-service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Notes API and Replication Benchmark Service for PostgreSQL Experiments",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "bench:raw": "tsx src/raw-tester.ts",
+    "bench:sync": "tsx src/bench-sync.ts",
+    "load:start": "tsx src/load-generator.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}
